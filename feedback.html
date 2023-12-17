@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PARkit Feedback Survey</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            
+            
+     
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+input[type="submit"] {
+    background-color: #808080; /* Grey color */
+    border: none;
+    color: #fff; /* White text color for better visibility on a dark background */
+    padding: 10px 20px; /* Adjust padding for size */
+    border-radius: 8px; /* Rounded edges */
+    display: block;
+    margin: 0 auto; /* Center the button */
+    cursor: pointer; /* Add cursor pointer for better user experience */
+}
+
+input[type="submit"]:hover {
+    background-color: #555; /* Darker grey on hover */
+}
+
+
+html, body {
+    height: 100%;
+}
+
+/* Rest of your styles go here */
+
+        
+    
+        fieldset {
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            padding: 15px;
+        }
+        .head{
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 100px;
+
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            
+           
+        }
+
+        
+        h1{
+            font-family: 'Anton', sans-serif;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #fff; /* Light gray background */
+            font-family: 'Oswald', sans-serif;
+        }
+
+        #survey-box {
+           
+            margin: 0 auto;
+            background-color: #fff; /* White background for the survey box */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+        }
+
+        fieldset {
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            padding: 15px;
+        }
+
+        legend {
+            /* font-weight: bold; */
+            text-align: center;
+            background-color: grey; /* Blue background for the legend */
+            color: #fff; /* White text color for the legend */
+            padding: 8px;
+            border-radius: 5px;
+        }
+        #additional_comments,#name,#other_payment_model,#other_factors{
+            border: 0.5px solid  black;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        @media only screen and (max-width: 600px) {
+    body {
+        margin: 10px;
+    }
+
+    .head {
+        padding: 10px;
+    }
+    .prblm{
+        width: 75vw;
+    }
+
+    #survey-box {
+        padding: 10px;
+    }
+
+    input[type="submit"] {
+        font-size: 14px;
+    }
+
+   
+}
+    </style>
+    
+<link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <nav id="navbar" class="">
+        <div class="nav-wrapper">
+          <!-- Navbar Logo -->
+          <div class="logo">
+            <!-- Logo Placeholder for Illustration -->
+            <a href="#home">
+                <!-- <img width="100px" height="auto" src="pARkit-logos_black.png"> -->
+                <p>PARKIT</p>
+            </a>
+          </div>
+      
+          <!-- Navbar Links -->
+          <ul id="menu">
+            <li><a href="index.html">Home</a></li><!--
+         --><li><a href="#services">Services</a></li><!--
+         --><li><a href="#about">About Us</a></li><!--
+         --><li><a href="feedback.html">Feedback</a></li>
+          </ul>
+        </div>
+    </nav>
+      
+      
+      <!-- Menu Icon -->
+    <div class="menuIcon">
+        <span class="icon icon-bars"></span>
+        <span class="icon icon-bars overlay"></span>
+    </div>
+      
+      
+    <div class="overlay-menu">
+        <ul id="menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+        </ul>
+    </div>
+    <div class="head">
+    <h1>pARkit (AR Parking App) Survey</h1>
+    <p>
+        Thank you for taking the time to provide your valuable feedback on our upcoming AR-based parking app.
+        We value your opinions and want to ensure that our app aligns with your expectations. Please be honest
+        and candid in your responses, as this survey is conducted to help us create a better solution for you.
+    </p>
+    </div>
+    <br>
+   
+  
+
+    
+ 
+       
+        <div id="survey-box">
+  
+
+    <form action="submit_feedback.php" method="post">
+       
+
+        <fieldset>
+            <legend>Contact Information:</legend>
+            <label for="name">Name *</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="age">Age Group *</label>
+            <select id="age" name="age" required>
+                <option value="under18">Under 18</option>
+                <option value="18-24">18-24</option>
+                <option value="25-34">25-34</option>
+                <option value="35-44">35-44</option>
+                <option value="45-54">45-54</option>
+                <option value="55-64">55-64</option>
+                <option value="65plus">65 and older</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>Usage of AR-based Parking App:</legend>
+            <label>Would you use an AR-based parking app that guides you to empty parking spots? *</label>
+            <br>
+            <input type="radio" name="use_app" value="Yes" required> Yes
+            <br>
+            <input type="radio" name="use_app" value="No"> No
+            <br>
+            <input type="radio" name="use_app" value="Depends"> Depends on the overhead (extra cost) I have to pay
+            <br>
+            <input type="radio" name="use_app" value="Maybe"> Maybe
+            <br>
+            <br>
+
+
+            <label>Would you be willing to pay for using an AR-guided parking spot? *</label>
+            <br>
+            <input type="radio" name="pay_for_parking" value="Yes" required> Yes, I'm willing to pay
+            <br>
+            <input type="radio" name="pay_for_parking" value="No"> No, I expect parking guidance to be free.
+            <br>
+            <input type="radio" name="pay_for_parking" value="Depends"> It depends on the pricing.
+        </fieldset>
+
+        <fieldset >
+            <legend>Location Preferences:</legend>
+            <label >where are you likely to look for parking spots? *</label>
+            <select name="location_preference" class="prblm" required>
+                <option value="Urban">Urban (Example: Mumbai, Delhi NCR, Bengaluru)</option>
+                <option value="Semi-urban">Semi-urban (Example: Navi Mumbai, Agra)</option>
+                <option value="Tourist">Tourist Destinations (Example: Lonavala, Goa)</option>
+                <option value="Business">Business Districts (Example: Belapur, BKC)</option>
+                <option value="Shopping">Shopping Malls (Example: SGC, Inorbit)</option>
+                <option value="Event">Event Venues (Example: Mahalakshmi Race Course, Jio Garden)</option>
+                <option value="Airports">Airports</option>
+                <option value="Educational">Educational Institutes (Example: NMIMS, SIES, Pillai's)</option>
+                <option value="Healthcare">Healthcare Facilities (Hospitals)</option>
+                <option value="Residential">Residential Neighbourhoods</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>Importance of Free Usage:</legend>
+            <label>How important is the issue of free usage without payment for an AR-guided parking spot to you? *</label>
+            <input type="radio" name="importance" value="Not Important" required> Not important at all
+            <input type="radio" name="importance" value="Somewhat Important"> Somewhat important
+            <input type="radio" name="importance" value="Very Important"> Very important
+        </fieldset>
+
+        <fieldset>
+            <legend>Payment Model Preferences:</legend>
+            <label>In your opinion, which payment model would you prefer for using an AR-guided parking spot? *</label>
+            <input type="radio" name="payment_model" value="Pay per use" required> Pay per use (one-time payment for each
+            spot)
+            <input type="radio" name="payment_model" value="Subscription"> Subscription (monthly or annual fee for
+            unlimited usage)
+            <input type="radio" name="payment_model" value="Not Use"> Not use at all
+            <br>
+            <label for="other_payment_model">Other:</label>
+            <input type="text" id="other_payment_model" name="other_payment_model">
+        </fieldset>
+
+        <fieldset>
+            <legend>Additional Features and Benefits:</legend>
+            <label>Would you be more likely to pay for parking if the app offers additional features or benefits, such as
+                reserved spots or discounts? *</label>
+            <input type="radio" name="additional_features" value="Yes" required> Yes
+            <input type="radio" name="additional_features" value="No"> No
+            <input type="radio" name="additional_features" value="Maybe"> Maybe
+        </fieldset>
+
+        <fieldset>
+            <legend>Factors Influencing Decision:</legend>
+            <label>What factors influence your decision to use or not use the app? (Select all that apply) *</label>
+            <input type="checkbox" name="factors[]" value="Cost"> Cost of parking
+            <br>
+            <input type="checkbox" name="factors[]" value="Convenience"> Convenience of finding parking
+            <br>
+            <input type="checkbox" name="factors[]" value="Trust"> Trust in the payment system
+            <br>
+            <input type="checkbox" name="factors[]" value="Environmental"> Environmental concerns (e.g., reducing traffic)
+            <br>
+            <input type="checkbox" name="factors[]" value="PreBooking"> Pre-Booking a time slot for parking
+            <br>
+            <input type="checkbox" name="factors[]" value="DynamicPricing"> Dynamic Pricing - Price changes according to
+            the time, distance from the location, etc.
+            <label for="other_factors">Other:</label>
+            <input type="text" id="other_factors" name="other_factors">
+        </fieldset>
+
+        <fieldset>
+            <legend>Free App Usage:</legend>
+            <label>Would you use the app without paying and, if so, for what purpose? *</label>
+            <br>
+            <input type="radio" name="free_app_usage" value="UseWithoutPayment"> I would use the app but not make the payment
+            for the parking spot.
+            <br>
+            <input type="radio" name="free_app_usage" value="UseAndConsiderPayment"> I will use it to find parking spots,
+            and I might consider paying later.
+            <br>
+            <input type="radio" name="free_app_usage" value="NotUse"> I would not use the app at all.
+            <br>
+            <input type="radio" name="free_app_usage" value="IntendedPurpose"> I would use the app for its intended purpose
+            (locating and paying for parking).
+        </fieldset>
+
+        <fieldset >
+            <legend>Additional Comments:</legend>
+            <label class="prblm" for="additional_comments">Do you have any other comments, suggestions, or concerns related to the  app's payment model or any other aspect of the app?</label>
+            <textarea class="prblm" id="additional_comments" name="additional_comments" rows="4" cols="50"></textarea>
+        </fieldset>
+
+        <input type="submit" value="Submit">
+    </form>
+</div>
+</body>
+
+</html>
+
