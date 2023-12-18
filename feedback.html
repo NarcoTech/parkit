@@ -115,7 +115,7 @@ html, body {
         }
         @media only screen and (max-width: 600px) {
     body {
-        margin: 10px;
+        margin: 0px;
     }
 
     .head {
@@ -127,6 +127,8 @@ html, body {
 
     #survey-box {
         padding: 10px;
+        margin: 10px;
+
     }
 
     input[type="submit"] {
@@ -155,7 +157,7 @@ html, body {
           <!-- Navbar Links -->
           <ul id="menu">
             <li><a href="index.html">Home</a></li><!--
-         --><li><a href="#services">Services</a></li><!--
+         --><li> <a onclick="window.location.href='https://github.com/NarcoTech/pARkitML'">Github</a></li><!--
          --><li><a href="#about">About Us</a></li><!--
          --><li><a href="feedback.html">Feedback</a></li>
           </ul>
@@ -164,20 +166,24 @@ html, body {
       
       
       <!-- Menu Icon -->
-    <div class="menuIcon">
+    <div class="menuIcon" >
         <span class="icon icon-bars"></span>
         <span class="icon icon-bars overlay"></span>
     </div>
+    
+
       
       
     <div class="overlay-menu">
         <ul id="menu">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#services">Services</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a  onclick="window.location.href='https://github.com/NarcoTech/pARkitML'">Github</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="feedback.html">Feedback</a></li>
         </ul>
     </div>
+    
+   
     <div class="head">
     <h1>pARkit (AR Parking App) Survey</h1>
     <p>
@@ -332,6 +338,7 @@ html, body {
     </form>
 </div>
 </body>
+<script src="hamburger.js"></script>
 
 </html>
 

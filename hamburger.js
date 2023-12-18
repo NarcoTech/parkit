@@ -40,3 +40,4 @@
                 section.scrollIntoView({ behavior: 'smooth' });
             }
         }
+

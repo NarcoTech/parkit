@@ -100,4 +100,12 @@ body,
 .img1 img{
   width: 100vw;
 }
+@media screen and (max-width: 767px) {
+  .l,.i{
+    display: none;
+  }
+  
+
+}
+
 
